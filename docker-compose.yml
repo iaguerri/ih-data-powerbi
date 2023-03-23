@@ -2,8 +2,8 @@ version: '3'
 
 services:
   jupyter:
-    build: .
-    image: jupyter:latest
+    build:
+      context: ./jupyter
     container_name: ih-data-powerbi
     working_dir: /app/jupyter
     command: jupyter notebook --ip 0.0.0.0
@@ -11,8 +11,10 @@ services:
       - .:/app
     ports:
       - "8888:8888"
+    links:
+      - postgres
   postgres:
-    image: postgis/postgis:15-master
+    image: postgis/postgis
     restart: always
     ports:
       - "5432:5432"

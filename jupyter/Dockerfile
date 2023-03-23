@@ -12,7 +12,9 @@ RUN apt-get update && \
     automake \
     libtool \
     pkg-config \
-    python3-pip
+    python3-pip\ 
+    libpython3.10-dev
+
 
 
 RUN pip install -U pandas \
@@ -21,9 +23,11 @@ RUN pip install -U pandas \
     numpy \
     ipyvizzu \
     plotly \
-    psycopg2 \
+    # psycopg2 \
+    #psycopg2-binary \
     SQLAlchemy \
-    powerbiclient
+    powerbiclient\
+    jupyter-server
 
 
 USER root
