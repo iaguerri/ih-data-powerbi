@@ -5,8 +5,8 @@ services:
     build:
       context: ./jupyter
     container_name: ih-data-powerbi
-    working_dir: /app/jupyter
-    command: jupyter notebook --ip 0.0.0.0
+    working_dir: /app
+    command: jupyter notebook --ip 0.0.0.0 --allow-root
     volumes:
       - .:/app
     ports:
