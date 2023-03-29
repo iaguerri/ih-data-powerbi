@@ -1,4 +1,6 @@
 .ipynb_checkpoints
 *.odp
 *.log
-config_file.json
+config_file.env
+.gitattributes
+*.geojson
