@@ -4,3 +4,7 @@
 config_file.env
 .gitattributes
 *.geojson
+*.qmd
+img
+ERD
+sql_cositas
