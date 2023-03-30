@@ -123,3 +123,5 @@ psql -U postgres
 
  ![Database access](data/img/powerbi2.png)
 
+## Link to PPT
+[PPT](https://docs.google.com/presentation/d/1wO_0wU0YHcT2CDyBrRidyojZVrA6dtGj1GfN8KIxO9s/edit?usp=sharing)
